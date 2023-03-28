@@ -7,3 +7,5 @@ $-> npm install  หรือ yarn install <br>
 $-> yarn start<br>
 $-> yarn run dist (สำหรับ build เป็น exe)
 
+![main](https://user-images.githubusercontent.com/10513767/228183694-1e678ee8-c0d7-415e-8c62-98afc7f956a9.png)
+![read](https://user-images.githubusercontent.com/10513767/228183777-8ccd3835-eaed-4cf8-8d26-5461924cdbc1.png)
