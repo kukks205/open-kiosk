@@ -1,0 +1,18 @@
+{
+  "name": "open-kiosk",
+  "version": "1.0.0",
+  "description": "ระบบ open-kiosk สำหรับโรงพยาบาลและรพ.สต.",
+  "main": "./src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/kukks205/open-kiosk",
+  "author": "kukks",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^23.2.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
