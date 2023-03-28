@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "Kanit";
+    src: url("./fonts/Kanit-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url("./fonts/Kanit-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url("./fonts/Kanit-Italic.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url("./fonts/Kanit-BlackItalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+
+html {
+    font-family: 'Kanit', 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.0em;
+    height: 100%;
+}
+
+body {
+    font-family: 'Kanit', 'Poppins', sans-serif;
+    font-size: 15px;
+    color: black;
+    padding: 1%;
+    background-color: #058692;
+    /*background-image: url("./images/bg001.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;*/
+}
+
+p {
+    font-family: 'Kanit', 'Poppins', sans-serif;
+    font-size: 1em;
+}
+
+.overBg {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(248, 248, 248, 0.93);
+    opacity: 1;
+  }
