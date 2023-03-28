@@ -10,7 +10,22 @@
     <link rel="stylesheet" href="./../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./../../assets/css/open_kiosk.css">
 
+    <script>
+        if (typeof module === 'object') {
+            window.module = module;
+            module = undefined;
+        }
+    </script>
+    <script src="../../lib/jquery-3.6.4.min.js"></script>
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!--<script src="../../lib/jquery1.12.4.min.js"></script>-->
+    <script src="../../node_modules/bootbox/dist/bootbox.all.min.js"></script>
+    <script src="../controllers/index.js"></script>
+
+    <script>
+        if (window.module) module = window.module;
+    </script>
+
 </head>
 
 <body class="container-fluid">
@@ -22,9 +37,11 @@
             กรุณาเสียบบัตรประชาชนแล้วกด ตกลง
         </h3>
 
-        <img src="../../assets/css/images/insert_card.png" alt="" srcset="" width="350px">
+        <img src="../../assets/css/images/insert_card.png" alt="" srcset="" width="250px">
+        <p id="ptdetail"></p>
+
         <div class="d-grid gap-2 col-4 mx-auto p-5">
-            <button class="btn btn-lg btn-success" type="button">ตกลง</button>
+            <button class="btn btn-lg btn-success" type="button" id="cardRead">อ่านบัตร</button>
         </div>
 
     </div>

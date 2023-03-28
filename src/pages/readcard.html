@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>OPEN KIOSK</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../../assets/css/open_kiosk.css">
+
+    <script>
+        if (typeof module === 'object') {
+            window.module = module;
+            module = undefined;
+        }
+    </script>
+    <script src="../../lib/jquery-3.6.4.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!--<script src="../../lib/jquery1.12.4.min.js"></script>-->
+    <script src="../../node_modules/bootbox/dist/bootbox.all.min.js"></script>
+    <script src="../controllers/readcard.js"></script>
+
+    <script>
+        if (window.module) module = window.module;
+    </script>
+
+</head>
+
+<body class="container-fluid">
+    <div class="overBg p-5">
+
+        <div class="text-center">
+            <h4>กรุณาตรวจสอบข้อมูลของท่าน หากถูกต้องแล้ว<br>
+                กรุณากดปุ่ม ยืนยันเข้ารับบริการ
+
+            </h4>
+        </div>
+
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-2 pt-3 text-center">
+                    <img id="img" src="" class="img-fluid rounded-start" width="160px">
+                </div>
+                <div class="col-md-10">
+                    <div class="card-body">
+                        <h5 class="card-title">ข้อมูลผู้รับบริการ</h5>
+                        <p id="ptdetail" class="card-text"></p>
+                        <h5 class="card-title">สิทธิการรักษา</h5>
+                        <p id="pttype" class="card-text"></p>
+
+                        <input type="hidden" name="correlationId" id="correlationId">
+                        <input type="hidden" name="pid" id="pid">
+
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-prepend">
+                                <label for="mobile" class="input-group-text">
+                                    <img src="../../assets/images/phone.png" alt="" srcset="" width="60px">
+                                </label>
+                            </div>
+                            <input type="text" class="form-control" id="mobile" name="mobile" aria-describedby="mobile"
+                                style="font-size: 26px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-grid gap-2 col-6 mx-auto p-5">
+            <button class="btn btn-lg btn-success" type="button" id="confirmed" style="height: 60px;"><h4>ยืนยันเข้ารับบริการ</h4></button>
+            <button class="btn btn-lg btn-warning" type="button" id="back" style="height: 60px;"><h4>ย้อนกลับ</h4></button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
